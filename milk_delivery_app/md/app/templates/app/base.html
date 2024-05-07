@@ -1,0 +1,35 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Dashboard{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+        <h1>Welcome to Your Dashboard</h1>
+    </header>
+    
+    <nav>
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+            <li><a href="{% url 'delivery_status' %}">Delivery Status</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Content block for child templates to extend -->
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 My Dashboard</p>
+    </footer>
+</body>
+</html>

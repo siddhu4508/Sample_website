@@ -1,0 +1,18 @@
+<!-- templates/milk_delivery_app/product_catalog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+</head>
+<body>
+    <h1>Product Catalog</h1>
+    <!-- Add product catalog content here -->
+     <h1>Products</h1>
+    <ul>
+        {% for item in products %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

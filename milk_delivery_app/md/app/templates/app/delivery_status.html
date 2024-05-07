@@ -1,0 +1,15 @@
+
+{% extends 'app/base.html' %}
+
+{% block title %}Delivery Status - My Dashboard{% endblock %}
+
+{% block content %}
+    <h2>Delivery Status</h2>
+    <ul>
+        {% for item in deliveries %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <p>Check your delivery status here.</p>
+{% endblock %}

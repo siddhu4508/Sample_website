@@ -1,0 +1,21 @@
+    <!-- dashboard.html -->
+{% extends 'app/base.html' %}
+
+{% block title %}Dashboard - My Dashboard{% endblock %}
+
+{% block content %}
+    <h1>Customer Dashboard</h1>
+    <!-- Add dashboard content here -->
+    <h1>Data Order List</h1>
+    <ul>
+        {% for item in orders %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <p>This is your dashboard page.</p>
+{% endblock %}
+
+
+</body>
+</html>
